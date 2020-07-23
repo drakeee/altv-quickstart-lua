@@ -2,7 +2,7 @@ require('systems.chat');
 
 registerCmd('coords', '/coords | Returns current coordinates to chat and console.', function(player)
     local coords = player.position
-    player:send(coords)
+    player:send(tostring(coords))
     alt.logInfo(tostring(coords))
 end)
 
