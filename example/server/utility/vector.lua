@@ -106,8 +106,8 @@ end
 ]]
 function randomPositionAround(position, range)
     return {
-        x = position.x + math.random() * (range * 2) - range,
-        y = position.y + math.random() * (range * 2) - range,
+        x = position.x + math.random(range * 2) - range,
+        y = position.y + math.random(range * 2) - range,
         z = position.z
     };
 end
