@@ -2,7 +2,7 @@ require('utility.vector')
 require('configuration.config')
 require('gamedata.weapons')
 
-alt.logInfo('Loaded: events/playerConnect')
+alt.logInfo('Loaded: events/playerDeath')
 
 function playerDeath(victim, killer, weaponHash)
 	if (not victim or not victim.valid) then
